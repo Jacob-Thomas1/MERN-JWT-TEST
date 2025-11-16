@@ -1,0 +1,119 @@
+require('dotenv').config()
+
+const express = require('express')
+
+// express app
+const app = express()
+
+// middleware
+app.use((req, res, next) => {
+  console.log(req.path, req.method)
+  next()
+})
+
+// routes
+app.get('/', (req, res) => {
+  res.json({mssg: 'Welcome to the app'})
+})
+
+// listen for requests
+app.listen(process.env.PORT, () => {
+  console.log('listening on port', process.env.PORT)
+})
+
+
+https://youtu.be/Hwsj5iS-rA0    MERN Stack Tutorial #14 - Finishing Touches 
+
+https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE
+MERN Stack Crash Course Tutorial
+
+https://www.youtube.com/watch?v=WsRBmwNkv3Q&list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT&pp=0gcJCaIEOCosWNin
+MERN Authentication Tutorial #1 - Intro & Starter Project
+
+
+https://github.com/iamshaunjp/MERN-Stack-Tutorial
+
+Atlas Monogodb Jacob  Tbacoj@66 MERNApp
+
+Tbacoj@66
+
+
+Connecting with MongoDB for VS Code
+1. Install MongoDB for VS Code.
+In VS Code, open "Extensions" in the left navigation and search for "MongoDB for VS Code." Select the extension and click install.
+2. In VS Code, open the Command Palette.
+Click on "View" and open "Command Palette."
+Search "MongoDB: Connect" on the Command Palette and click on "Connect with Connection String."
+3. Connect to your MongoDB deployment.
+Paste your connection string into the Command Palette.
+mongodb+srv://Jacob:<db_password>@mernapp.vjqxtp2.mongodb.net/
+
+MONG_URI=mongodb+srv://Jacob:Tbacoj@66@mernapp.vjqxtp2.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://Jacob:<db_password>@mernapp.vjqxtp2.mongodb.net/?retryWrites=true&w=majority&appName=MERNapp
+
+
+front end npm start
+backend npm run dev   npm install nodemon --save-dev
+
+{
+  "email" : "jacoky@gamil.com",
+  "password" : "Test@123"
+}
+
+Replace <db_password> with the password for the Jacob user. Ensure any options are URL encoded.  You can edit your database user password in Database Access. 
+
+How to install Mongoose in npm?
+Install Mongoose
+Initialize projects. npm init -y.
+Install Mongoose npm i mongoose.
+Install nodemon as a dev dependency npm i -D nodemon.
+Change “test” script in package.json to start our application using nodemon.
+
+/c/Users/sheel   C:\GITJacob\Git
+
+curl -X POST http://localhost:5000/api/auth/register \
+-H "Content-Type: application/json" \
+-d '{"username": "testuser", "email": "test@example.com", "password": "password123"}'[ password123 testuser1 test1@example.com]
+
+{
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+// Test credentials
+username: testuser
+email: test@example.com
+password: Password123!
+
+
+
+curl -X POST http://localhost:5000/api/auth/login \
+-H "Content-Type: application/json" \
+-d '{"email": "test@example.com", "password": "password123"}'
+
+git push error error: src refspec master does not match any error: failed to push some refs to
+-------------------------------
+https://www.youtube.com/watch?v=8YbgmhdSLj8&t=610s   How to Create and Connect MongoDB Atlas Database in Node JS
+mongo atlas    
+122.172.81.231 jacobt admin
+
+
+MONGO_URI=mongodb+srv://Jacob:Tbacoj@66@mernapp.vjqxtp2.mongodb.net/?retryWrites=true&w=majority&appName=MERNapp
+
+db crud connect string mongoose.connect("mongodb+srv://jacobt:admin@cluster0.dsdzpcu.mongodb.net/crud")
+
+mongodb+srv://mario:test1234@mernapp.ad5fpaw.mongodb.net/?retryWrites=true&w=majority
+
+https://github.com/iamshaunjp/MERN-Auth-Tutorial  
+
+May I suggest to go through similar issues and/or log a new one VS-Code-Issues - github.com/microsoft/vscode/issues/233618. But before this please try to Search for any settings related to WSL or Remote-WSL and remove or disable them from File > Preferences > Settings. Delete the .vscode folder in your user directory (e.g., C:\Users \[YourUsername]\.vscode). And Navigate to C:\Users\[YourUsername]\AppData\Local\Programs\Microsoft VS Code\extensions and look for any folders related to WSL or Remote-WSL and delete them. Restart VSCodeand check if the issues still exists. – 
+Sharad Paul
+ CommentedDec 8, 2024 at 12:06 
+
+https://stackoverflow.com/questions/79233448/vscode-under-windows-keeps-popping-up-a-terminal-window-asking-to-update-wsl-eve
+
+vs code error Windows Subsystem for Linux must be updated to the latest version to proceed. You can update by running 'wsl.exe --update'.
+
+
+git push -u origin main
